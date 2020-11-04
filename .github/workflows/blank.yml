@@ -24,7 +24,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo Set-env foo bar
-          echo "::set-env foo:bar"
+          echo "::set-env name=foo::bar"
           
       - name: Echo foo env variable
         run: |
